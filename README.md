@@ -1,0 +1,18 @@
+# UAS Sistem Operasi
+**->> Praktikum Pemrograman Shell**
+
+### Identitas :
+
+|  |  |
+|--|--|
+| NIM | **2341720248** |
+| Nama Lengkap | **Viery Nugroho** |
+| Kelas | TI-4B |
+| Dosen Pengampu | Erfan Rohadi, ST., M.Eng., Ph.D. <br> Mohammad Faried Rahmat, S.ST., M.Tr.T|
+
+## Deskripsi Fitur Shell
+
+|  |  |  |
+|--|--|--|
+|**No**| **Fitur** | **Detail** |
+| 1 | Lihat File | Melihat daftar isi sebuah direktori dengan perintah ***ls -l*** |
