@@ -15,6 +15,7 @@
 |  |  |  |
 |--|--|--|
 |**No**| **Fitur** | **Detail** |
-| 1 | Lihat File | Melihat daftar isi sebuah direktori dengan perintah ***ls -l*** |
+| 1 | Lihat Direktory | Melihat daftar isi sebuah direktori dengan perintah ***ls -l*** |
 | 2 | Melihat proses parent dan proses child |
-| 3 | Membuat dua proses sebanyak 5 kali
+| 3 | Membuat dua proses sebanyak 5 kali |
+| 4 | Melihat Manajemen Memori |
