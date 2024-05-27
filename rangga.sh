@@ -6,9 +6,10 @@ ulangi="y"
 while [ "$ulangi" == "y" ]; do
     echo "_________________________________________"
     echo "Masukkan operasi yang ingin dijalankan : "
-    echo "1. Melihat isi File"
+    echo "1. Melihat isi Direktory"
     echo "2. Melihat proses parent dan proses child"
-    echo "3. Membuat due proses sebanyak 5 kali"
+    echo "3. Membuat dua proses sebanyak 5 kali"
+    echo "4. Melihat Manajemen Memori"
     echo "----------------------------------------"
     read -p "Masukkan pilihan: " menu
 
@@ -36,6 +37,9 @@ while [ "$ulangi" == "y" ]; do
 
         # Ensure the parent process waits for the child to complete
         wait $parent_pid
+        ;;
+    4)
+        sudo dmesg | more
         ;;
     *)
         echo "Pilihan tidak valid!"
