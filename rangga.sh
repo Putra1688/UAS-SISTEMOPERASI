@@ -7,9 +7,9 @@ while [ "$ulangi" == "y" ]; do
     echo "_________________________________________"
     echo "Masukkan operasi yang ingin dijalankan : "
     echo "1. Melihat isi Direktory"
-    echo "2. Melihat proses parent dan proses child"
-    echo "3. Membuat dua proses sebanyak 5 kali"
-    echo "4. Melihat Manajemen Memori"
+    echo "2. Melihat Proses Parent dan Child"
+    echo "3. ID Proses"
+    echo "4. Manajemen Memori"
     echo "5. Kalkulator"
     echo "----------------------------------------"
     read -p "Masukkan pilihan: " menu
