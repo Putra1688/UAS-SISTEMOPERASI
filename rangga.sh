@@ -23,7 +23,6 @@ while [ "$ulangi" == "y" ]; do
         ps -ef --forest
         ;;
     3)
-        
         child_process() {   # mendefinisikan loop yang mencetak PID (Process ID) 
                             # dari proses yang sedang berjalan dan tidur selama 2 detik setiap iterasi
         for i in {1..5}; do
@@ -41,7 +40,7 @@ while [ "$ulangi" == "y" ]; do
         ;;
     4)
         sudo dmesg | more
-        ;;\
+        ;;
     5)
         lanjut="y"
         while [[ "$lanjut" == "y" ]]; do
