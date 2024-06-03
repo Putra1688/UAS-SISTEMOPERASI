@@ -17,6 +17,6 @@
 |**No**| **Fitur** | **Detail** |
 | 1 | Lihat Direktory | Melihat daftar isi sebuah direktori dengan perintah ***ls -l*** |
 | 2 | Proses Parent dan Child | Melihat proses parent dan child yang ada di sistem |
-| 3 | ID Proses | Mengembalikan ID proses (pid) | 
+| 3 | ID Proses | Mengembalikan ID proses (pid) dari proses anak yang baru dibuat ke proses induk  | 
 | 4 | Manajemen Memori | Melihat pengkoordinasian memori yang ada di komputer |
 | 5 | Kalkulator | Perhitungan angka dengan operator dasar |
