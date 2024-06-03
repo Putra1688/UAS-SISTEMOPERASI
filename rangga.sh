@@ -10,6 +10,7 @@ while [ "$ulangi" == "y" ]; do
     echo "2. Melihat proses parent dan proses child"
     echo "3. Membuat dua proses sebanyak 5 kali"
     echo "4. Melihat Manajemen Memori"
+    echo "5. Kalkulator"
     echo "----------------------------------------"
     read -p "Masukkan pilihan: " menu
 
@@ -40,7 +41,41 @@ while [ "$ulangi" == "y" ]; do
         ;;
     4)
         sudo dmesg | more
-        ;;
+        ;;\
+    5)
+        lanjut="y"
+        while [[ "$lanjut" == "y" ]]; do
+            echo -e "Kalkulator"
+            read -p "Masukkan angka pertama: " angka1
+            read -p "Masukkan operator (+, -, /,  \*): " operator
+            read -p "Masukkan angka kedua: " angka2
+
+
+            case $operator in
+            +)
+                hasil=$(echo "$angka1 + $angka2" | bc)
+                echo "$angka1 + $angka2 = $hasil"
+                ;;
+            -)
+                hasil=$(echo "$angka1 - $angka2" | bc)
+                echo "$angka1 - $angka2 = $hasil"
+                ;;
+            \*)
+                hasil=$(echo "$angka1 * $angka2" | bc)
+                echo "$angka1 * $angka2 = $hasil"
+                ;;
+            /)
+                hasil=$(echo "$angka1 / $angka2" | bc)
+                echo "$angka1 / $angka2 = $hasil"
+                ;;
+            *) 
+                echo "Operator tidak valid"
+                ;;
+            esac
+
+            read -p "Hitungan yang lain (y/n): " lanjut
+        done
+            ;;
     *)
         echo "Pilihan tidak valid!"
         ;;
